@@ -1,24 +1,23 @@
-# New Project
+<h1 align="center">
+  Todo App for Wiley
+</h1>
 
-> ✨ Bootstrapped with Create Snowpack App (CSA).
+<p>
+  Simple Todo App using React, Material UI, Snowpack
+</p>
 
-## Available Scripts
+## Getting started
 
-### npm start
+```bash
+# 1. Clone the repository.
+git clone https://github.com/Dmitry-Komkov/wiley-todo
 
-Runs the app in the development mode.
-Open http://localhost:8080 to view it in the browser.
+# 2. Install dependencies
+npm install
 
-The page will reload if you make edits.
-You will also see any lint errors in the console.
+# 3. Start developing server
+npm run start
 
-### npm run build
-
-Builds a static copy of your site to the `build/` folder.
-Your app is ready to be deployed!
-
-**For the best production performance:** Add a build bundler plugin like [@snowpack/plugin-webpack](https://github.com/snowpackjs/snowpack/tree/main/plugins/plugin-webpack) or [snowpack-plugin-rollup-bundle](https://github.com/ParamagicDev/snowpack-plugin-rollup-bundle) to your `snowpack.config.mjs` config file.
-
-### Q: What about Eject?
-
-No eject needed! Snowpack guarantees zero lock-in, and CSA strives for the same.
+# 4. Build to production
+npm run build
+```

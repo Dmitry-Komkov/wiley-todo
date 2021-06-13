@@ -3,6 +3,9 @@ import { createMuiTheme, CssBaseline, ThemeProvider } from '@material-ui/core'
 
 const theme = createMuiTheme({
   palette: {
+    // secondary: {
+    //   main: '#111111',
+    // },
     text: {
       primary: "rgb(34, 34, 34)",
     }

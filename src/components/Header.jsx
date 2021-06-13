@@ -5,7 +5,7 @@ import { grey } from '@material-ui/core/colors'
 const useStyles = makeStyles((theme) => ({
   header: {
     padding: '1rem 0',
-    backgroundColor: [theme.palette.primary.light],
+    backgroundColor: [theme.palette.primary.main],
     color: grey[50],
   },
 
@@ -26,7 +26,7 @@ const Header = () => {
       <Container>
         <Box className={classes.content}>
           <Grid container>
-            <Grid item>
+            <Grid item md={3}>
               <Box className={classes.logo}>
                 <span>Wiley Todo App</span>
               </Box>
