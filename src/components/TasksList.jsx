@@ -4,7 +4,13 @@ import { v4 } from 'uuid'
 import SingleTask from './SingleTask'
 
 const useStyles = makeStyles((theme) => ({
-
+  tasksList: {
+    '& li:not(:last-child)': {
+      marginBottom: '.5rem',
+      paddingBottom: '.5rem',
+      borderBottom: '1px solid #ddd',
+    },
+  }
 }))
 
 const TasksList = ({tasksList, completeTask, handleEdit, handleDelete}) => {

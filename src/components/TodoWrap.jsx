@@ -66,7 +66,7 @@ const TodoWrap = () => {
     const newTasks = [...tasksList]
     newTasks[idx].content = text
 
-    setTasksList(sortReverse(newList))
+    setTasksList(sortReverse(newTasks))
     setIsEditing(false)
   }
 
@@ -83,14 +83,14 @@ const TodoWrap = () => {
       <Container>
         <Box className={classes.content}>
           <Grid container spacing={3}>
-            <Grid item md={5}>
+            <Grid item xs={12} md={5}>
               {
                 !isEditing
                 ? <AddTask addTask={addTask} />
                 : <EditItem text={currentTask.content} id={currentTask.id} updateTask={updateEditedTask} cancelEdit={setIsEditing} />
               }
             </Grid>
-            <Grid item md={7}>
+            <Grid item xs={12} md={7}>
               <TasksList tasksList={tasksList} completeTask={completeTask} handleEdit={editTaskClick} handleDelete={deleteTask} />
             </Grid>
           </Grid>

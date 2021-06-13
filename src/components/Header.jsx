@@ -8,13 +8,16 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: [theme.palette.primary.main],
     color: grey[50],
   },
-
   logo: {
     '& span': {
       fontSize: '2rem',
       fontWeight: '700',
     },
   },
+
+  [theme.breakpoints.up('md')]: {
+  },
+
 }))
 
 const Header = () => {
@@ -26,8 +29,8 @@ const Header = () => {
       <Container>
         <Box className={classes.content}>
           <Grid container>
-            <Grid item md={3}>
-              <Box className={classes.logo}>
+            <Grid item xs={12} md={3}>
+              <Box className={classes.logo} textAlign={{xs: 'center', md: 'left'}}>
                 <span>Wiley Todo App</span>
               </Box>
             </Grid>
